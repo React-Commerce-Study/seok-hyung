@@ -1,0 +1,113 @@
+.ellipsis {
+    overflow: hidden; /* 넘치는 부분 가리기 */
+    text-overflow: ellipsis; /* ... 처리하기 */
+    white-space: nowrap; /* 줄바꿈 안하기 (한 줄 밑줄임표 적용) */
+
+    display: block; /* 특정 너비를 가지도록 상황에 따라 block or inline-block 으로 변경 */
+    width: 200px; /* inline-block처럼 콘텐츠에 따라 유동적인 너비를 가진다면 직접 너비를 설정 */
+}
+
+.wrapper-detail{
+    margin: 80px 320px;
+}
+
+.detail-container{
+    display: flex;
+    width: 100%;
+    
+}
+
+.detail-left{
+}
+.detail-right{
+    width: 100%;
+    padding: 0 50px;
+    
+}
+.detail-right .info{
+    margin-bottom: 16px;
+}
+.detail-right .name{
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+.detail-right .price{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 140px;
+    display: inline-block;
+}
+.detail-right .deliveryInfo{
+    margin-bottom: 20px;
+}
+.amount{
+    width: 150px;
+    height: 50px;
+    /* box-shadow: inset 0 0 0 5px red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #C4C4C4;
+    border-radius: 5px;
+}
+hr{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.amount img{
+    cursor: pointer;
+}
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.total-price .price-info{
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.detail-btn{
+    display: flex;
+    flex-grow: 1;
+    box-shadow: inset 0 0 0 5px red;
+}
+
+.detail-btn .buy{
+    flex-basis: 66%;
+    height: 60px;
+    border: none;
+    background: #21BF48;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin-right: 14px;
+    
+}
+.detail-btn .shop-bag{
+    flex-basis: 33%;
+    height: 60px;
+    background: #767676;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.total-amount{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+.total-amount-span{
+    color: #21BF48;
+}
+.total-price-span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #21BF48;
+}

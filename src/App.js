@@ -3,7 +3,7 @@ import Nav from './components/nav/Nav';
 import Carousel from './components/carousel/Carousel';
 import Products from './components/products/Products';
 import ProductDetail from './components/detail/ProductDetail'
-import { Routes,Route,Link } from 'react-router-dom';
+import { Routes,Route} from 'react-router-dom';
 
 import './style.css'
 import './index.css'
@@ -43,7 +43,7 @@ function App() {
 
         } />
 
-        <Route path='/detail/' element={ <ProductDetail products = {products} />} /> 
+        <Route path='/detail/:id' element={ <ProductDetail products = {products}  />} /> 
       </Routes>
     </>
   );
