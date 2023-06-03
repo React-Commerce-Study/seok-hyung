@@ -1,12 +1,14 @@
 import React from 'react';
 import './Nav.css';
+import { useNavigate } from 'react-router-dom';
 
 function Nav(props) {
+    let navigate = useNavigate();
     return (
         <div className='wrapper-nav'>
             <nav>
                 <div className='logo-container'>
-                    <img src="/img/Logo-hodu.png" id='main-logo' alt="메인로고" />
+                    <img onClick={()=>{navigate('/')}} src="/img/Logo-hodu.png" id='main-logo' alt="메인로고" />
                     <input type="text" placeholder='상품을 검색해보세요!' />
                     <button><img src="/img/search.svg" id='search-logo' alt="" /></button>
                 </div>

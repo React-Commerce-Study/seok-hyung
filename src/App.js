@@ -7,10 +7,25 @@ import { Routes,Route} from 'react-router-dom';
 
 import './style.css'
 import './index.css'
+import TabContent from './components/tabContent/TabContent';
 
 function App() {
   let [products, setProducts] = useState([])
   let carouselImages = products.map((item)=>item.image)
+  // const tabs = [
+  //   {
+  //     title: 'Tab 1',
+  //     content: <div>This is the content of Tab 1.</div>,
+  //   },
+  //   {
+  //     title: 'Tab 2',
+  //     content: <div>This is the content of Tab 2.</div>,
+  //   },
+  //   {
+  //     title: 'Tab 3',
+  //     content: <div>This is the content of Tab 3.</div>,
+  //   },
+  // ];
   
   useEffect(()=>{
     fetchProducts()
@@ -45,7 +60,9 @@ function App() {
 
         <Route path='/detail/:id' element={ <ProductDetail products = {products}  />} /> 
       </Routes>
+      {/* <TabContent tabs={tabs} /> */}
     </>
+
   );
 }
 

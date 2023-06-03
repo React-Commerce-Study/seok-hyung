@@ -9,12 +9,13 @@
 
 .wrapper-detail{
     margin: 80px 320px;
+    
 }
 
 .detail-container{
     display: flex;
     width: 100%;
-    
+    margin-bottom: 140px;
 }
 
 .detail-left{
@@ -52,6 +53,9 @@
     border: 2px solid #C4C4C4;
     border-radius: 5px;
 }
+.amount img{
+    cursor: pointer;
+}
 hr{
     margin-bottom: 30px;
     margin-top: 30px;
@@ -74,7 +78,7 @@ hr{
 .detail-btn{
     display: flex;
     flex-grow: 1;
-    box-shadow: inset 0 0 0 5px red;
+    
 }
 
 .detail-btn .buy{

@@ -3,7 +3,7 @@ import './Products.css'
 import { useNavigate } from 'react-router-dom';
 
 function Products({products}) {
-  console.log(products)
+  // console.log(products)
   const intl = new Intl.NumberFormat();
   let navigate = useNavigate();
   return (
